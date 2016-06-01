@@ -77,6 +77,50 @@ body {
     padding-left: 20px;
 }
 
+.content{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.panel {
+  border-radius: 0px;
+}
+
+.panel-default > .panel-heading{
+  background-color: white;
+}
+
+.todayContent{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.today{
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+
+}
+
+#time{
+  font-size: 35px;
+  text-align: center;
+}
+
+#date{
+  font-size: 25px;
+  text-align: center;
+}
+
+#day{
+  font-size: 20px;
+  text-align: center;
+}
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
