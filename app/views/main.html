@@ -1,5 +1,5 @@
-<div class="hidden-xs">
-    <div class="hidden-xm">
+<div >
+    <div >
         <div class="row">
           <div class="col-md-4">
             <h3>Tandale Ward</h3>
@@ -42,27 +42,75 @@
                         <h3 class="panel-title">Temperature in &#x2103;</h3>
                       </div>
                       <div class="panel-body">
-                        Panel content
+                        <div class="row">
+                          <div class="col-md-4 col-xs-4 col-sm-4">
+                            <i class="wi wi-day-sunny temperatureImage"></i> 
+                          
+                          </div>
+                          <div class="col-md-8 col-xs-8 col-sm-4 temperatureValue">
+                            <span class="">26 <i class="wi wi-celsius"></i></span>
+                            
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-3 today">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                        <h3 class="panel-title">Wind</h3>
                       </div>
                       <div class="panel-body">
-                        Panel content
+                        <div class="row">
+                          <div class="col-sm-2 col-xs-3">Speed</div>
+                          <div class="col-sm-4 col-sm-offset-1 col-xs-4">
+                            <i class="wi wi-day-windy windSpeedImage"></i>
+                          </div>
+                          <div class="col-sm-5 windSpeedValue col-xs-5">
+                            <span> 32 mph </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2 col-xs-3">Direction</div>
+                          <div class="col-sm-4 col-sm-offset-1 col-xs-4">
+                            <i class="wi wi-wind-direction windSpeedImage"></i>
+                          </div>
+                          <div class="col-sm-5 windSpeedValue col-xs-5">
+                            <span> SSE </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-3 today">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                        <h3 class="panel-title">Fall</h3>
                       </div>
                       <div class="panel-body">
-                        Panel content
+                        <div class="row">
+                          <div class="col-sm-2 col-xs-3">
+                            Rain 
+                          </div>
+                          <div class="col-sm-4 col-sm-offset-1 col-xs-4">
+                            <i class="wi wi-day-rain rainfallImage" ></i>
+                          </div>
+                          <div class="col-sm-5 rainfallValue col-xs-5">
+                            <span>0 mm </span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2 col-xs-3">
+                            Humidity 
+                          </div>
+                          <div class="col-sm-4 col-sm-offset-1 col-xs-4">
+                            <i class="wi wi-humidity rainfallImage" ></i>
+                          </div>
+                          <div class="col-sm-5 rainfallValue col-xs-5">
+                            <span>0 mm </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -74,8 +122,45 @@
         
     </div>
 </div>
+<div class="row">
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-title">
+          Previsous Days
+        </div>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Date</th>
+              <th>Temperature in <i class="wi wi-celsius"></i></th>
+              <th>Wind Speed (mph)</i></th>
+              <th>Wind Direction</th>
+              <th>Rainfall (mm)</i></th>
+            </tr>
+          </thead>
+          <tbody>
 
-<div class="hidden-md">
+            <tr ng-repeat="day in days">
+              <td>{{ day.day }}</td>
+              <td>{{ day.date }}</td>
+              <td> 27 </td>
+              <td> 45 </td>
+              <td> N-E </td>
+              <td> 22 </td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+    </div>
+    
+  
+</div>
+
+<!-- <div class="hidden-md">
     <div class="hidden-lg">
         <div class="row">
           <div class="col-sm-12 col-xs-12">
@@ -84,5 +169,5 @@
         </div>
     </div>
 </div>
-
+ -->
 

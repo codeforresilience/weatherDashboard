@@ -7,6 +7,7 @@
 
 body {
   padding: 0;
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -84,6 +85,7 @@ body {
 
 .panel {
   border-radius: 0px;
+
 }
 
 .panel-default > .panel-heading{
@@ -103,6 +105,7 @@ body {
   margin-bottom: 0px;
   padding-left: 10px;
 
+
 }
 
 #time{
@@ -118,6 +121,34 @@ body {
 #day{
   font-size: 20px;
   text-align: center;
+}
+
+.temperatureImage{
+  font-size: 50px;
+  color: blue;
+}
+
+.temperatureValue{
+  text-align: center;
+  font-size: 50px;
+}
+
+.windSpeedImage{
+  font-size: 30px;
+  color: blue;
+}
+
+.windSpeedValue{
+  font-size: 25px;
+}
+
+.rainfallImage{
+  color: blue;
+  font-size: 30px;
+}
+
+.rainfallValue{
+  font-size: 25px;
 }
 
 
