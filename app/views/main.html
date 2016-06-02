@@ -1,19 +1,19 @@
 <div >
     <div >
         <div class="row">
-          <div class="col-md-4">
-            <h3>Tandale Ward</h3>
+          <div class="col-md-4 ward-name">
+            <h2><strong>Tandale Ward</strong></h2>
           </div>
         </div>
         <div class="row">
           <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Today Weather</h3>
+              <div class="panel-heading weatherToday">
+                <h3 class="panel-title">Weather Today</h3>
               </div>
               <div class="panel-body todayContent">
                 <div class="row">
                   <div class="col-md-3 col-sm-3 today">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default todayPanel">
                       <!-- <div class="panel-heading">
                         <h3 class="panel-title">Panel title</h3>
                       </div> -->
@@ -37,8 +37,8 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-3 today">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
+                    <div class="panel panel-default todayPanel">
+                      <div class="panel-heading todayPanelHeader">
                         <h3 class="panel-title">Temperature in &#x2103;</h3>
                       </div>
                       <div class="panel-body">
@@ -57,12 +57,12 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-3 today">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
+                    <div class="panel panel-default todayPanel">
+                      <div class="panel-heading todayPanelHeader">
                         <h3 class="panel-title">Wind</h3>
                       </div>
                       <div class="panel-body">
-                        <div class="row">
+                        <div class="row windSpeed">
                           <div class="col-sm-2 col-xs-3">Speed</div>
                           <div class="col-sm-4 col-sm-offset-1 col-xs-4">
                             <i class="wi wi-day-windy windSpeedImage"></i>
@@ -71,7 +71,7 @@
                             <span> 32 mph </span>
                           </div>
                         </div>
-                        <div class="row">
+                        <div class="row windDirection">
                           <div class="col-sm-2 col-xs-3">Direction</div>
                           <div class="col-sm-4 col-sm-offset-1 col-xs-4">
                             <i class="wi wi-wind-direction windSpeedImage"></i>
@@ -84,12 +84,12 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-3 today">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
+                    <div class="panel panel-default todayPanel">
+                      <div class="panel-heading todayPanelHeader">
                         <h3 class="panel-title">Fall</h3>
                       </div>
                       <div class="panel-body">
-                        <div class="row">
+                        <div class="row rain">
                           <div class="col-sm-2 col-xs-3">
                             Rain 
                           </div>
@@ -131,18 +131,18 @@
         </div>
       </div>
       <div class="panel-body">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Day</th>
-              <th>Date</th>
-              <th>Temperature in <i class="wi wi-celsius"></i></th>
-              <th>Wind Speed (mph)</i></th>
-              <th>Wind Direction</th>
-              <th>Rainfall (mm)</i></th>
+        <table class="table ">
+          <thead class="tableHeader">
+            <tr >
+              <th style="text-align:center">Day</th>
+              <th style="text-align:center">Date</th>
+              <th style="text-align:center">Temperature in <i class="wi wi-celsius"></i></th>
+              <th style="text-align:center">Wind Speed (mph)</i></th>
+              <th style="text-align:center">Wind Direction</th>
+              <th style="text-align:center">Rainfall (mm)</i></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="tableBody">
 
             <tr ng-repeat="day in days">
               <td>{{ day.day }}</td>

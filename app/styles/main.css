@@ -7,7 +7,12 @@
 
 body {
   padding: 0;
-
+  /*background-color: #078EBD;*/
+  /*background-color: #8ddffb;*/
+  opacity: 0.7;
+  background-image: url("../images/clouds.jpeg");
+  /*background-color: #42c9f8;
+*/
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -45,7 +50,9 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 0px;
+  background: rgba(0, 0, 0, 0.1);
+
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -67,6 +74,7 @@ body {
     border: 1px solid transparent;
     border-radius: 0px;
     padding: 0px;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .jumbotron {
@@ -74,8 +82,10 @@ body {
     width: 100%;
     height: 100px;
     text-align: left;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 20px;
+
+
 }
 
 .content{
@@ -85,11 +95,43 @@ body {
 
 .panel {
   border-radius: 0px;
+  /*background-color: #078EBD;*/
+  background-color: #8ddffb;
+  background-color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  border-width: 0px;
+
 
 }
 
 .panel-default > .panel-heading{
   background-color: white;
+  background-color: #066E93;
+  color: white;
+
+
+}
+
+.panel-default > .todayPanelHeader{
+  background-color: #066E93;
+  color: white;
+
+
+}
+
+.panel-default > .weatherToday{
+  background-color: #066E93;
+  color: white;
+  border-bottom-color: #066E93;
+  
+
+
+}
+
+.todayPanelHeader{
+  background-color: #066E93;
+  color: white;
+  
 }
 
 .todayContent{
@@ -97,6 +139,8 @@ body {
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 0px;
+
+
 }
 
 .today{
@@ -106,6 +150,14 @@ body {
   padding-left: 10px;
 
 
+
+
+}
+
+.todayPanel{
+  /*background-color: #1494D7;*/
+  background-color: #066E93;
+  color: white;
 }
 
 #time{
@@ -124,18 +176,18 @@ body {
 }
 
 .temperatureImage{
-  font-size: 50px;
-  color: blue;
+  font-size: 60px;
+  color: yellow;
 }
 
 .temperatureValue{
   text-align: center;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .windSpeedImage{
   font-size: 30px;
-  color: blue;
+  color: yellow;
 }
 
 .windSpeedValue{
@@ -143,12 +195,55 @@ body {
 }
 
 .rainfallImage{
-  color: blue;
+  color: yellow;
   font-size: 30px;
 }
 
 .rainfallValue{
   font-size: 25px;
+}
+
+.jumbotronHeader{
+  /*background-image: url("../images/header.jpg");*/
+  color: black;
+  font-size: 50px;
+   background: rgba(0, 0, 0, 0.1);
+
+}
+
+.jumbrotonFooter{
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.ward-name{
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  color: white;
+  
+}
+
+.windSpeed{
+  margin-bottom: 10px;
+}
+
+.rain{
+  margin-bottom: 10px;
+}
+
+.tableHeader{
+  color: white;
+  text-align: center;
+  font-style: bold;
+  font-size: 20px;
+  
+}
+
+.tableBody{
+  background-color: #066E93;
+  color: white;
+  text-align: center;
 }
 
 
